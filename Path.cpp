@@ -9,6 +9,7 @@ DESCRIPTION:	The Path Class, a stacked/queued list for finding a path through a 
 
 */
 #include "Path.h"
+//#include <Windows.h>
 
 		//Default constructor for the path:
 	Path::Path() : First(NULL), Last(NULL) {}
@@ -66,7 +67,9 @@ DESCRIPTION:	The Path Class, a stacked/queued list for finding a path through a 
 		Last = node;
 
 		/* //PRINTOUT TEST
-		system("cls");
+		HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+		SetConsoleCursorPosition(hConsole, {0,0});
+		//system("cls");
 		for (int i = 0; i < rows; i++)
 		{
 			for (int j = 0; j < cols; j++)
@@ -208,7 +211,9 @@ DESCRIPTION:	The Path Class, a stacked/queued list for finding a path through a 
 		delete node;
 
 		/* //PRINTOUT TEST
-		system("cls");
+		//system("cls");
+		HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+		SetConsoleCursorPosition(hConsole, {0,0});
 		for (int i = 0; i < rows; i++)
 		{
 		for (int j = 0; j < cols; j++)
