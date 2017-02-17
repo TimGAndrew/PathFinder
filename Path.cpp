@@ -9,7 +9,7 @@ DESCRIPTION:	The Path Class, a stacked/queued list for finding a path through a 
 
 */
 #include "Path.h"
-//#include <Windows.h>
+//#include <Windows.h> //Uncomment this and the 2 blocks below (/* */) to display the path as it draws
 
 		//Default constructor for the path:
 	Path::Path() : First(NULL), Last(NULL) {}
